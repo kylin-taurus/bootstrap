@@ -468,9 +468,9 @@ class Carousel {
     this._setActiveIndicatorElement(nextElement)
 
     if (this._element.classList.contains(ClassName.SLIDE)) {
+      nextElement.classList.add(orderClassName)
       reflow(nextElement)
 
-      nextElement.classList.add(orderClassName)
       activeElement.classList.add(directionalClassName)
       nextElement.classList.add(directionalClassName)
 
